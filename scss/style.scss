@@ -1,52 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
 html {
   box-sizing: border-box;
+  font-family: "Comfortaa", cursive;
+  line-height: calc((16 / 14) * 100%);
 }
-li{
-	list-style: none;
+li {
+  list-style: none;
 }
 *,
-*::after
-*::before{
-	box-sizing: inherit;
+*::after *::before {
+  box-sizing: inherit;
 }
 body {
   color: #000;
-  font-family: Comfortaa;
+
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
-  text-transform: uppercase;
 }
 a {
   text-decoration: none;
   color: inherit;
 }
 .container {
-	max-width: 1180px;
-	padding: 0px 10px;
-	margin: 0 auto;
+  max-width: 1180px;
+  padding: 0px 10px;
+  margin: 0 auto;
 }
 header {
   background-color: #fff8f3;
 }
-.header__inner { 
-	padding-top: 4px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+.header__inner {
+  padding-top: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .logo {
 }
 .menu {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   &__list {
-   display: flex;
-   
+    display: flex;
+
     gap: 20px;
   }
 
@@ -54,16 +53,39 @@ header {
   }
 
   &__list-link {
-	text-transform: uppercase;
+    text-transform: uppercase;
   }
 }
 .phone {
+  position: relative;
+}
+.phone__header::before {
+  position: absolute;
+  content: "";
+  background-image: url(../image/phone.svg);
+  width: 20px;
+  height: 20px;
+  left: -23px;
+  top: -2px;
+}
+.footer__inner {
+  padding: 34px 0 39px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .footer {
   &__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 230px;
   }
 
   &__social {
+    display: flex;
+    gap: 15px;
+    padding-left: 0px;
   }
 
   &__social-item {
@@ -76,4 +98,5 @@ header {
   }
 }
 .email {
+  margin: 17px 0px;
 }

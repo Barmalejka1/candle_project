@@ -1,5 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
 html {
   box-sizing: border-box;
+  font-family: "Comfortaa", cursive;
+  line-height: 114.2857142857%;
 }
 
 li {
@@ -13,12 +16,9 @@ li {
 
 body {
   color: #000;
-  font-family: Comfortaa;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
-  text-transform: uppercase;
 }
 
 a {
@@ -54,4 +54,40 @@ header {
 }
 .menu__list-link {
   text-transform: uppercase;
+}
+
+.phone {
+  position: relative;
+}
+
+.phone__header::before {
+  position: absolute;
+  content: "";
+  background-image: url(../image/phone.svg);
+  width: 20px;
+  height: 20px;
+  left: -23px;
+  top: -2px;
+}
+
+.footer__inner {
+  padding: 34px 0 39px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 230px;
+}
+.footer__social {
+  display: flex;
+  gap: 15px;
+  padding-left: 0px;
+}
+.email {
+  margin: 17px 0px;
 }
